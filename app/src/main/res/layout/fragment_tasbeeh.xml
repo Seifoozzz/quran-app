@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".AllFragment.tasbeehFragment"
+    android:background="@drawable/mainbackground">
+
+    <ImageView
+        android:id="@+id/tasbeeh_icon"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintWidth_percent="0.3"
+        android:adjustViewBounds="true"
+        android:layout_marginTop="40dp"
+        android:src="@drawable/taspeeh"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageView
+        android:id="@+id/reply_icon"
+        android:layout_width="50dp"
+        android:layout_height="70dp"
+        android:src="@drawable/ic_reply"
+        app:layout_constraintTop_toBottomOf="@id/tasbeeh_icon"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+        android:id="@+id/mgmoo3_tsbehaat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginStart="15dp"
+        android:text="مجموع التسبيحات"
+        android:textSize="25sp"
+        android:textColor="@color/whiteColor"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/reply_icon" />
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="5dp"
+        android:background="@color/homeColor"
+        app:layout_constraintTop_toBottomOf="@id/mgmoo3_tsbehaat"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tsbehaat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="15dp"
+        android:text="التسبيحه"
+        android:textSize="25sp"
+        android:textColor="@color/whiteColor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/reply_icon" />
+
+    <Button
+        android:id="@+id/tsbehaa_button"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="5dp"
+        android:background="@color/homeColor"
+        app:layout_constraintTop_toBottomOf="@id/tsbehaat"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="40dp"
+        android:background="@color/homeColor"
+        android:text="الله أكبر"
+        android:textSize="30sp"
+        android:textColor="@color/whiteColor"
+        android:fontFamily="@font/kfc_naskh_webfont"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tsbehaa_button" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
